@@ -1,0 +1,69 @@
+.schema {
+    width: 100%;
+    position: relative;
+    user-select: none;
+    color: $c-very-light-grey;
+
+    &:before {
+        content: "";
+        display: block;
+        padding-bottom: 61.1393692777%;
+    }
+
+    &__information {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: $c-black;
+        padding: 15px;
+        min-width: 140px;
+        border: 1px solid $c-very-light-grey;
+
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+    
+    &__area,
+    &__overlay,
+    &__background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+        & img,
+        & svg {
+            max-width: 100%;
+        }
+    }
+
+    &__area {
+        z-index: 2;
+    }
+
+    &__vector {
+        width: 100%;
+        height: 100%;
+
+        g {
+            opacity: 0;
+            cursor: pointer;
+            transition: opacity .2s ease;
+            
+            &:hover,
+            &.is-animate {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__overlay {
+        z-index: 1;
+    }
+
+    &__background {
+        z-index: 0;
+    }
+}
