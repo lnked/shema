@@ -3,6 +3,7 @@
     position: relative;
     user-select: none;
     color: $c-very-light-grey;
+    border: 1px solid red;
 
     &:before {
         content: "";
@@ -43,10 +44,7 @@
         z-index: 2;
     }
 
-    &__vector {
-        width: 100%;
-        height: 100%;
-
+    &__overlay {
         g {
             opacity: 0;
             cursor: pointer;
@@ -56,6 +54,12 @@
             &.is-animate {
                 opacity: 1;
             }
+        }
+
+        object {
+            width: 100%;
+            height: 100%;
+            border: 1px solid blue;
         }
     }
 
