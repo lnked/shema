@@ -14,32 +14,33 @@
     // #
     var overlayTemplate = [
         '<div class="schema__overlay">',
-            '<object type="image/svg+xml" ng-attr-data="{{$ctrl.svg}}"></object>',
+            // '<object type="image/svg+xml" ng-attr-data="{{$ctrl.svg}}"></object>',
 
-            // '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 984 601" ng-click="overlay.click();">',
+            '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 984 601" ng-click="overlay.click();">',
 
-                // '<g data-hover="#830AAF" data-name="Объект 1" data-number="1">',
-                //     '<rect x="247.497" y="0.002" width="243" height="232"></rect>',
-                // '</g>',
+                '<g fill="#830AAF" data-name="Объект 1" data-number="1">',
+                    '<rect x="247.497" y="0.002" width="243" height="232"></rect>',
+                '</g>',
                 
-                // '<g data-hover="#AE181E" data-name="Объект 2" data-number="2">',
-                //     '<rect x="0.497" y="232.002" width="243" height="137"></rect>',
-                // '</g>',
+                '<g fill="#AE181E" data-name="Объект 2" data-number="2">',
+                    '<rect x="0.497" y="232.002" width="243" height="137"></rect>',
+                '</g>',
                 
-                // '<g data-hover="#45D50A" data-name="Объект 3" data-number="3">',
-                //     '<rect x="493.497" y="232.002" width="243" height="137"></rect>',
-                // '</g>',
+                '<g fill="#45D50A" data-name="Объект 3" data-number="3">',
+                    '<rect x="493.497" y="232.002" width="243" height="137"></rect>',
+                '</g>',
 
-                // '<g data-hover="#27D2EB" data-name="Объект 4" data-number="4">',
-                //     '<rect x="740.496" y="232.002" width="243" height="137"></rect>',
-                // '</g>',
+                '<g fill="#27D2EB" data-name="Объект 4" data-number="4">',
+                    '<rect x="740.496" y="232.002" width="243" height="137"></rect>',
+                '</g>',
                 
-                // '<g data-hover="#DC4E75" data-name="Объект 5" data-number="5">',
-                //     '<rect x="247.497" y="369.002" width="243" height="232"></rect>',
-                // '</g>',
+                '<g fill="#DC4E75" data-name="Объект 5" data-number="5">',
+                    '<rect x="247.497" y="369.002" width="243" height="232"></rect>',
+                '</g>',
 
-            // '</svg>',
-        '</div>',
+            '</svg>',
+
+        '</div>'
     ].join(' ');
     
     app.directive('overlay', function() {
